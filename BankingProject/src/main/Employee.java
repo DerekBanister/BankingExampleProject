@@ -2,6 +2,7 @@ package main;
 
 public class Employee {
 	
+	//DRY DONT REPEAT YOURSELF
 	private String firstName;
 	private String lastName;
 	private int employeeId;

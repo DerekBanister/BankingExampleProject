@@ -1,7 +1,7 @@
 package main;
 
 public class Manager extends Employee{
-		
+	// Slide 27 Java Classes, Inheritance 
 	// fields
 		private String timecards;
 	
@@ -25,7 +25,11 @@ public class Manager extends Employee{
 
 	@Override
 	public String toString() {
-		return "Manager [timecards=" + timecards + "]";
+		return "Manager [timecards=" + timecards + ", "
+				+ "firstName= " + getFirstName() + ", "
+						+ "lastName= " + getLastName() + ", "
+								+ "jobTitle= " + getJobTitle() + ", "
+										+ "employeeId= " + getEmployeeId() + "]";
 	}
 
 	
