@@ -40,5 +40,7 @@ public class Main {
 			strBox.add("pig");
 				
 			System.out.println(strBox.get());	
+			
+			ExampleClass.NestedClass.hello();
 	}
 }
