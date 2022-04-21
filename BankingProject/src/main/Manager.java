@@ -1,6 +1,6 @@
 package main;
 
-public class Manager extends Employee{
+public class Manager extends Employee implements AccountActionsIMPL {
 	// Slide 27 Java Classes, Inheritance 
 	// fields
 		private String timecards;
@@ -30,6 +30,18 @@ public class Manager extends Employee{
 						+ "lastName= " + getLastName() + ", "
 								+ "jobTitle= " + getJobTitle() + ", "
 										+ "employeeId= " + getEmployeeId() + "]";
+	}
+
+	@Override
+	public void withdraw(float amount, float withdrawAmount) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deposit(float amount, float depositAmount) {
+		// TODO Auto-generated method stub
+		
 	}
 
 	

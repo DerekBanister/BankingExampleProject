@@ -8,15 +8,15 @@ public abstract class AbstractAccountActions {
 		}
 		
 		public AbstractAccountActions(String bankAccount) {
+			System.out.println("constructor from abstract class");
 			this.bankAccount = bankAccount;
 		}
 		
 		
 		
 		
-		
-		
-		abstract int withdraw(int amount, int withdrawAmount);
+	
+		abstract double withdraw(int amount, int withdrawAmount);
 		abstract int deposit(int amount, int depositAmount);
 		
 		public String getBankAccount() {

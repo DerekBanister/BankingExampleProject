@@ -7,6 +7,7 @@ public class Employee extends AbstractAccountActions {
 	private String lastName;
 	private int employeeId;
 	private String jobTitle;
+	private double totalAmount;
 	
 	public Employee() {
 		
@@ -62,9 +63,9 @@ public class Employee extends AbstractAccountActions {
 	}
 
 	@Override
-	int withdraw(int amount, int withdrawAmount) {
-		// TODO Auto-generated method stub
-		return 0;
+	double withdraw(int amount, int withdrawAmount) {
+		totalAmount = amount - withdrawAmount;
+		return totalAmount;
 	}
 
 	@Override
