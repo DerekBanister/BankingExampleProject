@@ -1,6 +1,6 @@
 package main;
 
-public class Employee {
+public class Employee extends AbstractAccountActions {
 	
 	//DRY DONT REPEAT YOURSELF
 	private String firstName;
@@ -60,8 +60,19 @@ public class Employee {
 				+ "employeeId= " + employeeId
 				+ ", jobTitle= " + jobTitle + "]";
 	}
+
+	@Override
+	int withdraw(int amount, int withdrawAmount) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	int deposit(int amount, int depositAmount) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 	
-	//other methods
 	
 	
 	
