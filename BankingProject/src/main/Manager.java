@@ -44,7 +44,11 @@ public class Manager extends Employee implements AccountActionsIMPL {
 		
 	}
 
-	
+	public void PrintThis(int ...val) {
+		for (int i : val) {
+			System.out.println(i);
+		}
+	}
 	
 	
 	
